@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #243735;
+  --secondry-color: #d8da8e;
+  --other-color: #3f5654;
+  --primary-font: "Tai Heritage Pro", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*------------------------ sidebar div ---------------------------------------- */
+.Sidebar {
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  background-color: var(--primary-color) !important;
+  font-family: var(--primary-font) !important;
+}
+.primary-color {
+  color: var(--other-color);
+}
+.logo {
+  text-align: center;
+  padding: 5%;
+}
+.Typography {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.a-sidebar {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  list-style: none;
+  width: 80%;
+}
+.a-sidebar:hover {
+  border-bottom: 10px solid var(--secondry-color);
+  cursor: pointer;
+}
+.a-sidebar:focus {
+  border-bottom: 10px solid var(--secondry-color);
+}
+
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-top: 10%;
+}
+
+/* ------------------------primart button ------------------------------ */
+.btn-primary {
+  width: 200px !important;
+  height: 50px !important;
+  background: #d8da8e !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  color: white;
+}
+.btn-primary:hover {
+  color: var(--other-color) !important;
+}
+.primary-link:hover {
+  border: none !important;
+}
+
+/*---------------------------Home div ---------------------------------------*/
+.home {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.title-home {
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.sub-title-home {
+  font-size: 70px;
+}
+
+/* --------------------------- About div -------------------------- */
+
+.about-button {
+  margin: 15px;
+  padding: 20px;
+}
+
+.about-body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.about-list {
+  margin: 5px;
+}
+
+.board{
+  border: none !important;
+
+
+}
+.bg-pattern{
+background-image: url(assist/so-white.png);
+position: relative;
+
+
+}
+
+/* -------------------------- works div --------------------------  */
+.content-div{
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  height: 250px;
+
+}
+.content-div:hover{
+  background-image: linear-gradient(to right ,    rgb(63, 86, 84), hsla(135, 5%, 85%, 0.8)) !important;
+   
+} 
+
+
+
+/*--------------------------  serveices div --------------------------  */
+.card {
+  border: none !important;
+  background-color: var(--secondry-color) !important;
+  margin: 25px;
+  border-radius: 5% !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img-thumbnail {
+  background-color: var(--secondry-color) !important;
+  border: none !important;
+}
+
+.card-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 35px !important;
+  text-align: center;
+  color: var(--primary-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px !important ;
+}
+
+/* -------------------------- contact me div -------------------------- */
+.contact-header {
+  text-align: center;
+}
+.contact-img {
+  width: 60px;
+  margin: 20px;
+}
+.contact-img:hover {
+  border-radius: 50%;
+  width: 65px;
+  box-shadow: -5px 5px 5px 5px rgb(187, 187, 187, 0.3);
+}
+
+.contact-link:hover {
+  background-color: var(--secondry-color);
+}
+
+Form {
+  width: 60%;
+  padding: 30px;
+  margin-left: 5%;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  color: var(--other-color);
+}
+
+Form.Control {
+  border-color: var(--other-color) !important;
+}
+
+.message {
+  height: 150px;
+  width: 100%;
+  border: 12px 12px var(--other-color) !important;
+  border-radius: 9px;
+  outline: none;
+  padding: 5px;
+}
+
+.message:hover {
+  border-color: var(--primary-color) !important;
+}
+
+/* *********responsive to differnte screen  *******************/
+@media (min-width: 300px) {
+  .Sidebar {
+    display: none;
+  }
+
+.row{
+  display: none !important;
+}
+  .marwa-class {
+    font-size: 3em;
+  }
+  .home {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+
+  .home-div{
+     height: 100vh;
+  }
+
+  .about-header{
+    margin-top: 3rem;
+  }
+
+  .tab-label{
+    font-size: 15px;
+   }
+}
+
