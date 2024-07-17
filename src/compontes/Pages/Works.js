@@ -1,7 +1,9 @@
 
 import React from 'react';
-import { SiRedux, SiMongodb, SiExpress, SiTailwindcss, SiFirebase } from "react-icons/si";
-import { FaHtml5, FaCss3Alt, FaNode, FaReact, FaSwift, FaBootstrap, FaGithub } from "react-icons/fa";
+import { SiRedux, SiMongodb, SiExpress, SiTailwindcss, SiFirebase, SiTypescript, SiNextdotjs, SiPrisma, SiStripe } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaNode, FaReact, FaSwift, FaBootstrap, FaGithub, FaEye } from "react-icons/fa";
+import { SiClerk } from 'react-icons/si'
+
 
 import portal from '../../assist/portal.jpeg'
 import messana from '../../assist/messana.png'
@@ -9,6 +11,8 @@ import chatApp from '../../assist/chatApp.png'
 import landing from '../../assist/landing.jpeg'
 import website from '../../assist/websitepng.png'
 import commerce from '../../assist/E-commerce.png'
+import dashboard from '../../assist/dashboard.png'
+import { Link } from 'react-router-dom';
 
 export default function Works() {
   const projects = [
@@ -55,8 +59,23 @@ export default function Works() {
       title: "Landing page",
       desc: " Landing page for plant product",
       icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px"><path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z" /><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z" /><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z" /><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z" /><circle cx="32" cy="24" r="7" fill="#29b6f6" /></svg>,
-    
-    }]
+
+    }, {
+      image: dashboard,
+      alt: 'dashboard  image',
+      title: "Dashboard for stores ",
+      desc: " Manage your store from one page .",
+      icon: [<FaReact className=' text-blue-500 w-5 h-5' />,
+      <SiNextdotjs className=' text-white w-5 h-5' />,
+      <SiMongodb className=' text-green-800 w-5 h-5' />,
+      <SiPrisma className=' text-blue-500 w-5 h-5' />,
+      <SiStripe className=' text-purple-500 w-5 h-5' />,
+      <SiTypescript className=' text-blue-600 w-5 h-5' />],
+
+
+
+    },
+  ]
 
   return (
     <div className=' '>
