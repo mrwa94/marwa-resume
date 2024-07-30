@@ -31,7 +31,7 @@ export default function Home() {
 
    return (
       <div name='home' className=' md:h-screen home-div'>
-         <div className='mr-3'>
+         <div className='  mr-3 '>
             <ui className="flex flex-row gap-3 pt-5 justify-end" >
                {contactInfo.map((info) => {
                   return (
@@ -44,12 +44,14 @@ export default function Home() {
                })}
             </ui>
          </div>
-         <Container className='home'>
-            <div className='text-left ps-5' >
-               <div className='flex flex-row gap-3'>
+         <div className='flex flex-col  gap-16 home '>
+            <div className='text-left ps-5 ' >
+               <div className=''>
                   <img src={logo} alt="logo" className=" max-w-[70px]  lg:hidden " />
                   <p className='  text-teal-900 pt-4' > Hi , my name is   </p>
                </div>
+               
+               <div className='w-full h-44'>
                <div>
                   <h1 className='lg:text-6xl md:text-4xl sm:text-xl text-[#3F5654] '>
                      <TypeAnimation
@@ -80,18 +82,22 @@ export default function Home() {
                      speed={50} />
                   <p />
                </div>
-
-               <div className='button-home'>
-                  {/* To download the resume    */}
-                  <a download
-                     href='Resume.pdf'
-                     className='btn-primary group px-5 py-2'>
-                     Resume
-                  </a>
-
+                  
+                  
                </div>
+              
             </div>
-         </Container>
+            
+            <div className='  '>
+               {/* To download the resume    */}
+               <a download
+                  href='Resume.pdf'
+                  className='btn-primary group px-5 py-2'>
+                  Resume
+               </a>
+            </div>
+
+         </div>
       </div>
    )
 }
